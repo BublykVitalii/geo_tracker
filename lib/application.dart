@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:geo_tracker/screens/auth/screen/auth_screen.dart';
 
 class Application extends StatefulWidget {
   const Application({
@@ -18,12 +19,12 @@ class _ApplicationState extends State<Application> {
   @override
   Widget build(BuildContext context) {
     Widget child = MaterialApp(
-        //  onGenerateRoute: onGenerateRoute,
-        );
+      onGenerateRoute: onGenerateRoute,
+    );
     return child;
   }
 
-  // Route onGenerateRoute(RouteSettings? settings) {
-  //   return AuthScreen.route;
-  // }
+  Route onGenerateRoute(RouteSettings? settings) {
+    return AuthScreen.route;
+  }
 }
