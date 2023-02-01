@@ -1,5 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.geo_tracker">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
    <application
         android:label="geo_tracker"
         android:name="${applicationName}"
