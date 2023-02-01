@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+
 import 'package:geo_tracker/screens/auth/screen/auth_screen.dart';
 
 class Application extends StatefulWidget {
+  final bool isLoggedIn;
   const Application({
     Key? key,
+    required this.isLoggedIn,
   }) : super(key: key);
 
   @override

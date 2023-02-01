@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "233079952728",
+    "project_id": "geo-tracker-3ee3a",
+    "storage_bucket": "geo-tracker-3ee3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233079952728:android:f0d3efc3f12d08846d412d",
+        "android_client_info": {
+          "package_name": "com.example.geo_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "233079952728-177ji282485v7dcmngb21n1ibbb1ie8e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_p4swWdoGMq9h6che5Wsz28h2utdVh2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "233079952728-177ji282485v7dcmngb21n1ibbb1ie8e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
