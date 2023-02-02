@@ -6,6 +6,7 @@ import 'package:geo_tracker/screens/auth/screen/cubit/auth_cubit.dart';
 import 'package:geo_tracker/screens/auth/screen/widgets/image_logo_app.dart';
 import 'package:geo_tracker/screens/auth/screen/widgets/loader.dart';
 import 'package:geo_tracker/screens/auth/screen/widgets/sign_in_with_google.dart';
+import 'package:geo_tracker/screens/home/screen/home_screen.dart';
 
 // ---Text---
 const String _error = 'error';
@@ -44,7 +45,7 @@ class _AuthScreenState extends State<AuthScreen> {
     return BlocConsumer<AuthCubit, AuthState>(
       listener: (context, state) {
         if (state.status == AuthStatus.success) {
-          // Navigator.pushReplacement(context, HomeScreen.route);
+          Navigator.pushReplacement(context, HomeScreen.route);
         }
         if (state.status == AuthStatus.error) {
           ScaffoldMessenger.of(context).showSnackBar(_snackBar(
