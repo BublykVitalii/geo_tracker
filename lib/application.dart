@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:geo_tracker/screens/auth/screen/auth_screen.dart';
+import 'package:geo_tracker/screens/home/screen/home_screen.dart';
 
 class Application extends StatefulWidget {
   final bool isLoggedIn;
@@ -28,6 +29,6 @@ class _ApplicationState extends State<Application> {
   }
 
   Route onGenerateRoute(RouteSettings? settings) {
-    return AuthScreen.route;
+    return widget.isLoggedIn ? HomeScreen.route : AuthScreen.route;
   }
 }
