@@ -39,7 +39,7 @@ class HttpAuthRepository implements AuthRepository {
   @override
   Future<bool> inLoggedIn() async {
     final sessionId = await _preference.getToken();
-    return sessionId != null;
+    return sessionId.isNotEmpty;
   }
 
   @override

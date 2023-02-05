@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:geo_tracker/screens/profile/screen/profile_screen.dart';
 
 import 'package:get_it/get_it.dart';
 
@@ -32,7 +33,7 @@ class BurgerMenu extends StatelessWidget {
           ListTile(
             title: Text(_profile.toUpperCase()),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.pushReplacement(context, ProfileScreen.route);
             },
           ),
           const Spacer(),
