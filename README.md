@@ -1,16 +1,3 @@
-# geo_tracker
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Зробив стартовий екран з логотипом та авторизацією за допомогою Google.  
+На головному екрані, є карта, після натискання на кнопки можна буде побачити де на карті знаходиться користувач та буде маркер, при натисканню на маркер відображається фото, ім'я, та пошта користувача.
+На головному екрані, зверху в AppBar можна побачити бургер меню, по натискані на нього з'являється бокове меню, з кнопкою внизу вийти з додатка, та кнопка профіль, по натисканню на кнопку профілю, користувач переходить на екран з інформацією, де відображається фото користувача ім'я та пошта.
