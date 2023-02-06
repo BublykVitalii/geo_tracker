@@ -7,6 +7,7 @@ import 'package:geo_tracker/screens/auth/screen/widgets/image_logo_app.dart';
 import 'package:geo_tracker/screens/auth/screen/widgets/loader.dart';
 import 'package:geo_tracker/screens/auth/screen/widgets/sign_in_with_google.dart';
 import 'package:geo_tracker/screens/home/screen/home_screen.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 // ---Text---
 const String _error = 'error';
@@ -15,6 +16,13 @@ const String _error = 'error';
 const double _padding = 16.0;
 const double _indent40 = 40.0;
 const double _borderRadius = 18.0;
+
+GoogleSignIn _googleSignIn = GoogleSignIn(
+  scopes: [
+    'email',
+    'https://www.googleapis.com/auth/contacts.readonly',
+  ],
+);
 
 class AuthScreen extends StatefulWidget {
   static const _routeName = '/auth-screen';
@@ -39,6 +47,14 @@ class AuthScreen extends StatefulWidget {
 
 class _AuthScreenState extends State<AuthScreen> {
   AuthCubit get authCubit => BlocProvider.of<AuthCubit>(context);
+
+  Future<void> _handleSignIn() async {
+    try {
+      await _googleSignIn.signIn();
+    } catch (error) {
+      print(error);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +81,7 @@ class _AuthScreenState extends State<AuthScreen> {
               children: [
                 const ImageLogoApp(),
                 const SizedBox(height: _indent40),
-                SignInWithGoogle(onPressed: _onPressedSaveGoogle),
+                SignInWithGoogle(onPressed: _signInWithGoogle),
               ],
             ),
           ),
@@ -74,8 +90,9 @@ class _AuthScreenState extends State<AuthScreen> {
     );
   }
 
-  void _onPressedSaveGoogle() {
+  void _signInWithGoogle() {
     authCubit.signInWithGoogle();
+    _handleSignIn();
   }
 
   SnackBar _snackBar(String error) {
