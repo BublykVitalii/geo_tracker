@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "233079952728-cs03bq2irt8v12jdrltj1vfk9c1r2cnq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.geo_tracker",
+            "certificate_hash": "ee6f9b274e1c9bcdd70b468d8a57c822a190bb4c"
+          }
+        },
+        {
           "client_id": "233079952728-177ji282485v7dcmngb21n1ibbb1ie8e.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,6 +37,13 @@
             {
               "client_id": "233079952728-177ji282485v7dcmngb21n1ibbb1ie8e.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "233079952728-bgda05ebjrqdensmf7ecrsjtqipc06j5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.geoTracker"
+              }
             }
           ]
         }
